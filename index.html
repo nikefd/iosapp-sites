@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nikefd Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .apps {
+            display: grid;
+            gap: 20px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-4px);
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            flex-shrink: 0;
+        }
+        .app-info h2 {
+            font-size: 1.3em;
+            margin-bottom: 4px;
+            color: #333;
+        }
+        .app-info .cn-name {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .app-info p {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .links a {
+            color: rgba(255,255,255,0.9);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>nikefd Apps</h1>
+        <p class="subtitle">iOS Apps by an indie developer</p>
+
+        <div class="apps">
+            <a href="/apps/onthewall/" class="app-card">
+                <div class="app-icon">🧗</div>
+                <div class="app-info">
+                    <h2>On The Wall</h2>
+                    <div class="cn-name">攀岩游戏</div>
+                    <p>A fun climbing game - climb famous landmarks around the world</p>
+                </div>
+            </a>
+
+            <a href="/apps/nexthold/" class="app-card">
+                <div class="app-icon">🎯</div>
+                <div class="app-info">
+                    <h2>NextHold</h2>
+                    <div class="cn-name">下一点</div>
+                    <p>AI-powered climbing training assistant</p>
+                </div>
+            </a>
+
+            <a href="/apps/nextlife/" class="app-card">
+                <div class="app-icon">⏳</div>
+                <div class="app-info">
+                    <h2>NextLife</h2>
+                    <div class="cn-name">下一生</div>
+                    <p>Visualize your life time and make every moment count</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="mailto:nikefd@gmail.com">Contact</a>
+            <a href="https://github.com/nikefd">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
